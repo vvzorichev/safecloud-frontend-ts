@@ -1,6 +1,6 @@
 import isNameEqual from './isNameEqual';
 
-const filesFilter = (file, searchField, section) => {
+const filesFilter = (file: any, searchField: string, section: string): boolean => {
 
 	const isFileNameEqual = isNameEqual(file.name, searchField);
 	if (!isFileNameEqual) {

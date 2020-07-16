@@ -1,4 +1,4 @@
-import updateFileList from '../my-cloud-page/main-block/file-list/reducers/update-file-list';
+import updateFileList from '../my-cloud-page/main-block/file-list/duck/reducers/update-file-list';
 import updateMemory from './update-memory';
 import updateSearchField from '../header/search-panel/reducers';
 import updateLogStatus from './update-log-status';

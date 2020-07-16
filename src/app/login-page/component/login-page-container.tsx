@@ -2,9 +2,9 @@ import React, { useEffect } from 'react';
 import { Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 
-import LoginPage from './login-page.jsx';
+import LoginPage from './login-page.tsx';
 
-const mapStateToProps =  ({ logStatus: { isLoggedIn } }) => {
+const mapStateToProps =  ({ [logStatus: { isLoggedIn }]: any }) => {
 	return { isLoggedIn	};
 };
 

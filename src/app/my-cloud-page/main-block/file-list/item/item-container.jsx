@@ -2,7 +2,7 @@ import React from 'react';
 import { withRouter } from 'react-router-dom';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import { compose } from '../../../../../utils';
+import { compose } from '../component/utils';
 
 import { onOpenFolder } from '../../actions';
 import { changeFileTag } from '../actions';

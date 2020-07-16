@@ -20,7 +20,7 @@ const fileService = new FileService();
 const memoryService = new MemoryService();
 
 ReactDOM.render(
-  <React.StrictMode>
+	<React.StrictMode>
 		<Provider store={store}>
 			<ErrorBoundary>
 				<FileServiceProvider value={fileService}>
@@ -30,6 +30,6 @@ ReactDOM.render(
 				</FileServiceProvider>
 			</ErrorBoundary>
 		</Provider>
-  </React.StrictMode>,
-  document.getElementById('root')
+	</React.StrictMode>,
+	document.getElementById('root')
 );

@@ -1,4 +1,4 @@
-const updateFile= (file) => {
+const updateFile = (file) => {
 	return {
 		...file,
 		isTagged: !file.isTagged
