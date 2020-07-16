@@ -1,0 +1,21 @@
+.log-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 140px;
+	height: 35px;
+	margin-right: 5%;
+	border: 1px solid #375a7f;
+	border-radius: 0.25rem;
+	color: #fff;
+	text-decoration: none;
+}
+
+.log-btn:last-child {
+	margin-right: 0;
+}
+
+.log-btn:hover {
+	color: #375a7f;
+	text-decoration: none;
+}

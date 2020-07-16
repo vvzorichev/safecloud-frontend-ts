@@ -1,0 +1,19 @@
+.register-page {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 5% auto;
+}
+
+.rp-header {
+	margin-bottom: .5%;
+	font-size: 33px;
+	font-weight: 400;
+}
+
+.rp-p {
+	margin-top: 2.5%;
+	color: #999;
+}

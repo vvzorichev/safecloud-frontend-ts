@@ -1,0 +1,18 @@
+.sidebar .nav-link {
+  font-weight: 500;
+  color: white;
+}
+
+.sidebar .nav-link .feather {
+  margin-right: 4px;
+  color: rgb(119, 119, 119);
+}
+
+.sidebar .active {
+  color: #007bff;
+}
+
+.sidebar-heading {
+  font-size: .75rem;
+  text-transform: uppercase;
+}

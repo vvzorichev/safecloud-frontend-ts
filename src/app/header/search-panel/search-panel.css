@@ -1,0 +1,23 @@
+.search-panel {
+	margin: .2rem 10% 0 10%;
+	width: 100%;
+}
+
+.search-panel-input {
+	display: block;
+	width: 100%;
+	height: calc(1.5em + 0.75rem + 2px);
+	padding: 0.375rem 0.75rem;
+	border-radius: 0.25rem;
+	background-color: #222;
+	color: white;
+	border: 1px solid transparent;
+	border-bottom: 1px solid #375a7f;
+	transition-duration: .5s;
+	transition-property: all;
+}
+
+.search-panel-input:focus {
+	border-color: #739ac2;
+  outline: 0;
+}
