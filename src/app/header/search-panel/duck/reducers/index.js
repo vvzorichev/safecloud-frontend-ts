@@ -1,3 +1,3 @@
-import updateSearchField from './update-search-field';
+import searchFieldReducer from './search-field-reducer';
 
-export default updateSearchField;
+export default searchFieldReducer;

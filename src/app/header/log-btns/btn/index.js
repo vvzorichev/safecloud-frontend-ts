@@ -1,3 +1,3 @@
-import LogBtn from './log-btn.jsx';
+import Btn from './btn.jsx';
 
-export default LogBtn;
+export default Btn;

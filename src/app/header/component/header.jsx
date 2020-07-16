@@ -8,13 +8,13 @@ import './header.css';
 
 const Header = () => {
   return (
-		<div className="header-head">
-			<Link className="header-link" to="/mycloud/drive">
-				SafeCloud
-			</Link>
-			<SearchPanel />
-			<LogBtns />
-    </div>
+	<div className="header-head">
+		<Link className="header-link" to="/mycloud/drive">
+			SafeCloud
+		</Link>
+		<SearchPanel />
+		<LogBtns />
+	</div>
   );
 };
 

@@ -2,9 +2,9 @@ import React from 'react';
 
 import Checkbox from '../../../../common/checkbox';
 
-import './file-list-item.css';
+import './item.css';
 
-const FileListItem = ({ file, changeFileTag, onOpenFolder = null }) => {
+const Item = ({ file, changeFileTag, onOpenFolder = null }) => {
 	const { id, name, size, type, dateAdded, isTagged } = file;
 
 	return (
@@ -25,4 +25,4 @@ const FileListItem = ({ file, changeFileTag, onOpenFolder = null }) => {
 	);
 };
 
-export default FileListItem;
+export default Item;

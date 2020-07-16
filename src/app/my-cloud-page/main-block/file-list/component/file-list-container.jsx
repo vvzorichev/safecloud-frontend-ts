@@ -4,8 +4,8 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
 import { withFileService } from '../../../../common/hoc-helpers';
-import { compose } from '../../../../../utils';
-import { fetchFiles } from '../actions';
+import { compose } from '../../../../common/utils';
+import { fetchFiles } from '../duck/actions';
 
 import Spinner from '../../../../common/spinner';
 import ErrorIndicator from '../../../../common/error-indicator';

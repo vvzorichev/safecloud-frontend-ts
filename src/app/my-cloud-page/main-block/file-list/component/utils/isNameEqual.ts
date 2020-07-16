@@ -1,4 +1,4 @@
-const isNameEqual = (name, searchField) => {
+const isNameEqual = (name: string, searchField: string | null): boolean => {
 	if (!searchField) {
 		return true;
 	}

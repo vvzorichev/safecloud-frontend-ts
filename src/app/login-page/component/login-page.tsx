@@ -4,17 +4,13 @@ import LoginForm from '../login-form';
 
 import './login-page.css';
 
-const LoginPage = () => {
+const LoginPage: React.FC = () => {
   return (
     <div className="login-page">
-			<h1 className="lp-header">
-				Login
-			</h1>
-			<LoginForm />
-			<p className="lp-p">
-				&copy; SafeCloud 2020
-			</p>
-		</div>
+		<h1 className="lp-header">Login</h1>
+		<LoginForm />
+		<p className="lp-p">&copy; SafeCloud 2020</p>
+	</div>
   );
 };
 

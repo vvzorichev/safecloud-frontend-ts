@@ -1,3 +1,3 @@
-import LoginPage from './login-page-container.js';
+import LoginPage from './login-page-container';
 
 export default LoginPage;

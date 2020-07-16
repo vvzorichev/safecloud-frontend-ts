@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import './log-btn.css';
+import './btn.css';
 
-const LogBtn = ({ value, to, onLog }) => {
+const Btn = ({ value, to, onLog }) => {
 	return (
 		<Link className="log-btn" to={to} onClick={onLog}>
 			{value}
@@ -11,4 +11,4 @@ const LogBtn = ({ value, to, onLog }) => {
 	);
 };
 
-export default LogBtn;
+export default Btn;

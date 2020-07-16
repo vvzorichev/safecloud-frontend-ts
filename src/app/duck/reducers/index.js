@@ -1,22 +1,22 @@
-import updateFileList from '../my-cloud-page/main-block/file-list/duck/reducers/update-file-list';
-import updateMemory from './update-memory';
-import updateSearchField from '../header/search-panel/reducers';
-import updateLogStatus from './update-log-status';
-import updateUploadStatus from '../my-cloud-page/main-block/toolbar/upload-menu/reducers';
-import updateFolderStatus from '../my-cloud-page/main-block/reducers';
+import fileListReducer from '../../my-cloud-page/main-block/file-list/duck/reducers/file-list-reducer';
+import memoryReducer from './memory-reducer';
+import searchFieldReducer from '../../header/search-panel/duck/reducers';
+import logStatusReducer from './log-status-reducer';
+import updateUploadStatus from '../../my-cloud-page/main-block/toolbar/upload-menu/reducers';
+import folderStatusReducer from '../../my-cloud-page/main-block/duck/reducers';
 
 const updateState = (state, action) => {
 	return {
 		uploadStatus : updateUploadStatus(state, action),
-		fileList: updateFileList(state, action),
-		memory: updateMemory(state, action),
-		searchField: updateSearchField(state, action),
-		folderStatus: updateFolderStatus(state, action)
+		fileList: fileListReducer(state, action),
+		memory: memoryReducer(state, action),
+		searchField: searchFieldReducer(state, action),
+		folderStatus: folderStatusReducer(state, action)
 	};
 };
 
 const reducer = (state, action) => {
-	const logStatus = updateLogStatus(state, action);
+	const logStatus = logStatusReducer(state, action);
 
 	const otherStates = 
 		logStatus.isLoggedIn ?

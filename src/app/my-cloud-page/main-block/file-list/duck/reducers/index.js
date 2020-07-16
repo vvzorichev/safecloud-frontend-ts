@@ -1,3 +1,3 @@
-import updateFileList from './update-file-list';
+import fileListReducer from './file-list-reducer';
 
-export default updateFileList;
+export default fileListReducer;

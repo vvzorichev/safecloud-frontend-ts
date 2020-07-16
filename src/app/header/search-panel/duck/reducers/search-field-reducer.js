@@ -1,4 +1,4 @@
-const updateSearchField = (state, action) => {
+const searchFieldReducer = (state, action) => {
 	
 	if (state === undefined) {
 		return {
@@ -20,4 +20,4 @@ const updateSearchField = (state, action) => {
 	}
 };
 
-export default updateSearchField;
+export default searchFieldReducer;

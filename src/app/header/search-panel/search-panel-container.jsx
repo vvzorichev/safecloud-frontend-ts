@@ -2,9 +2,9 @@ import React from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
-import { compose } from '../../../utils';
+import { compose } from '../../common/utils';
 
-import onSearch from './actions';
+import onSearch from './duck/actions';
 
 import SearchPanel from './search-panel.jsx';
 

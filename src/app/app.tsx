@@ -6,7 +6,7 @@ import MyCloudPage from './my-cloud-page/component';
 import LoginPage from './login-page/component';
 import RegisterPage from './register-page/component';
 
-const App = () => {
+const App: React.FC = () => {
 	return (
 		<Router>
 			<Header />

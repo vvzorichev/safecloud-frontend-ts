@@ -1,24 +1,24 @@
 import React from 'react';
 
-import LogBtn from '../log-btn';
+import Btn from '../btn';
 
 import './log-btns.css';
 
 const LogBtns = ({ isLoggedIn, isRegistered, onLogout, onRegistration }) => {
 	const createAccount = isLoggedIn || isRegistered ||
-		<LogBtn 
+		<Btn
 			to="/register" 
 			value="Create Account" 
 			onLog={onRegistration} />;
 
 	const login = isLoggedIn || !isRegistered ||
-		<LogBtn 
+		<Btn
 			to="/login" 
 			value="Login" 
 			onLog={onLogout} />;
 	
 	const logout = !isLoggedIn ||
-		<LogBtn	
+		<Btn
 			to="/login" 
 			value="Logout" 
 			onLog={onLogout} />;

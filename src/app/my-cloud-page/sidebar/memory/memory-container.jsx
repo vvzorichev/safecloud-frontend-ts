@@ -3,8 +3,8 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
 import { withMemoryService } from '../../../common/hoc-helpers';
-import { compose } from '../../../../utils';
-import { fetchMemory } from '../../../actions';
+import { compose } from '../../../common/utils';
+import { fetchMemory } from '../../../duck/actions';
 
 import Spinner from '../../../common/spinner';
 import ErrorIndicator from '../../../common/error-indicator';

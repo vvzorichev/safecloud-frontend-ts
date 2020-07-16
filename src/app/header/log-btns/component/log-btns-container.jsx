@@ -2,7 +2,7 @@ import React from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
-import { onLogout, onRegistration } from '../../../actions';
+import { onLogout, onRegistration } from '../../../duck/actions';
 
 import LogBtns from './log-btns.jsx';
 

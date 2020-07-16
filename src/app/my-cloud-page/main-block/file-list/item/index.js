@@ -1,3 +1,3 @@
-import FileListItem from './file-list-item-container.jsx';
+import FileListItem from './item-container.jsx';
 
 export default FileListItem;

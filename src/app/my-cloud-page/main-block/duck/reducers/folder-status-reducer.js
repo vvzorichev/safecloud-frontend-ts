@@ -1,4 +1,4 @@
-const updateFolderStatus = (state, action) => {
+const folderStatusReducer = (state, action) => {
 	if (state === undefined) {
 		
 		return {
@@ -26,4 +26,4 @@ const updateFolderStatus = (state, action) => {
 	}
 };
 
-export default updateFolderStatus;
+export default folderStatusReducer;

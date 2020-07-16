@@ -1,3 +1,3 @@
-import updateFolderStatus from './update-folder-status';
+import folderStatusReducer from './folder-status-reducer';
 
-export default updateFolderStatus;
+export default folderStatusReducer;

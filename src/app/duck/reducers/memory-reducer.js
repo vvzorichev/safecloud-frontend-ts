@@ -1,4 +1,4 @@
-const updateMemory = (state, action) => {
+const memoryReducer = (state, action) => {
 
 	if (state === undefined) {
 		return {
@@ -38,4 +38,4 @@ const updateMemory = (state, action) => {
 	}
 };
 
-export default updateMemory;
+export default memoryReducer;

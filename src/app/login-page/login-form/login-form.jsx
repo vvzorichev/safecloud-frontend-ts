@@ -2,7 +2,7 @@ import React from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
-import { onLogin } from '../../actions';
+import { onLogin } from '../../duck/actions';
 
 import { BigBlueBtn } from '../../common/buttons';
 import Checkbox from '../../common/checkbox';

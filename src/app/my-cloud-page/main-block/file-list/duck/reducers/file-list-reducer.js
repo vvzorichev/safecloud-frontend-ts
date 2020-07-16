@@ -16,7 +16,7 @@ const changeTag = (fileList, fileId) => {
 	];
 };
 
-const updateFileList = (state, action) => {
+const fileListReducer = (state, action) => {
 
 	if (state === undefined) {
 		return {
@@ -63,4 +63,4 @@ const updateFileList = (state, action) => {
 	}
 };
 
-export default updateFileList;
+export default fileListReducer;

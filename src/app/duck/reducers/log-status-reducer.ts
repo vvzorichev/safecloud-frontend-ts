@@ -1,6 +1,6 @@
-import ILogStatus from "../../interfaces/ILogStatus";
+import ILogStatus from "../../interfaces/i-log-status";
 
-const updateLogStatusReducer = (state: any, action: any): ILogStatus => {
+const logStatusReducer = (state: any, action: any): ILogStatus => {
 	
 	if (state === undefined) {
 		return {
@@ -33,4 +33,4 @@ const updateLogStatusReducer = (state: any, action: any): ILogStatus => {
 	}
 };
 
-export default updateLogStatusReducer;
+export default logStatusReducer;

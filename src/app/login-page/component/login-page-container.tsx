@@ -2,25 +2,30 @@ import React, { useEffect } from 'react';
 import { Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 
-import LoginPage from './login-page.tsx';
+import LoginPage from './login-page';
+import ILogStatus from "../../interfaces/i-log-status";
 
-const mapStateToProps =  ({ [logStatus: { isLoggedIn }]: any }) => {
+interface INewLogStatus {
+	logStatus: ILogStatus
+}
+
+const mapStateToProps =  ({ logStatus: { isLoggedIn } }: INewLogStatus) => {
 	return { isLoggedIn	};
 };
 
-const LoginPageContainer = ({ isLoggedIn }) => {
+type IStateProps = ReturnType<typeof mapStateToProps>;
+
+const LoginPageContainer: React.FC<IStateProps> = ({ isLoggedIn }) => {
 
 	useEffect(() => {
-		document.title = 'Login - SafeCloud'
+		document.title = 'Login - SafeCloud';
 	});
 
 	if (isLoggedIn) {
 		return <Redirect to="/mycloud/drive" />;
 	}
 
-  return (
-    <LoginPage />
-  );
+  return <LoginPage />;
 };
 
 export default connect(mapStateToProps)(LoginPageContainer);

@@ -2,12 +2,12 @@ import React from 'react';
 import { withRouter } from 'react-router-dom';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import { compose } from '../component/utils';
+import { compose } from '../../../../common/utils';
 
-import { onOpenFolder } from '../../actions';
-import { changeFileTag } from '../actions';
+import { onOpenFolder } from '../../duck/actions';
+import { changeFileTag } from '../duck/actions';
 
-import FileListItem from './file-list-item.jsx';
+import Item from './item.jsx';
 
 const mapDispatchToProps = (dispatch) => {
 	return bindActionCreators({
@@ -16,7 +16,7 @@ const mapDispatchToProps = (dispatch) => {
 	}, dispatch);
 };
 
-const FileListItemContainer = ({ file = {}, changeFileTag, onOpenFolder, history }) => {
+const ItemContainer = ({ file = {}, changeFileTag, onOpenFolder, history }) => {
 
 	const handleFolderOpening = () => {
 		if (history.location.pathname !== '/mycloud/drive') {
@@ -27,7 +27,7 @@ const FileListItemContainer = ({ file = {}, changeFileTag, onOpenFolder, history
 
 	if (file.type === 'folder') {
 		return (
-			<FileListItem 
+			<Item
 			file={file}
 			changeFileTag={changeFileTag}
 			onOpenFolder={handleFolderOpening} />
@@ -35,7 +35,7 @@ const FileListItemContainer = ({ file = {}, changeFileTag, onOpenFolder, history
 	}
 
 	return (
-		<FileListItem 
+		<Item
 			file={file}
 			changeFileTag={changeFileTag} />
 	);
@@ -44,4 +44,4 @@ const FileListItemContainer = ({ file = {}, changeFileTag, onOpenFolder, history
 export default compose(
 	connect(null, mapDispatchToProps),
 	withRouter
-)(FileListItemContainer);
+)(ItemContainer);
