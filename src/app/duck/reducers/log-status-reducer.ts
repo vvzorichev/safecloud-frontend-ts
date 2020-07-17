@@ -1,4 +1,4 @@
-import ILogStatus from "../../interfaces/i-log-status";
+import { ILogStatus } from "../interfaces/i-log-status";
 
 const logStatusReducer = (state: any, action: any): ILogStatus => {
 	

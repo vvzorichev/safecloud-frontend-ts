@@ -1,5 +1,5 @@
 import fileListReducer from '../../my-cloud-page/main-block/file-list/duck/reducers/file-list-reducer';
-import memoryReducer from './memory-reducer';
+import memoryReducer from '../../my-cloud-page/sidebar/memory/duck/reducers'
 import searchFieldReducer from '../../header/search-panel/duck/reducers';
 import logStatusReducer from './log-status-reducer';
 import updateUploadStatus from '../../my-cloud-page/main-block/toolbar/upload-menu/reducers';

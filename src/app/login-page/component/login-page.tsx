@@ -6,10 +6,10 @@ import './login-page.css';
 
 const LoginPage: React.FC = () => {
   return (
-    <div className="login-page">
-		<h1 className="lp-header">Login</h1>
+    <div className="LoginPage">
+		<h1 className="LoginPage-Header">Login</h1>
 		<LoginForm />
-		<p className="lp-p">&copy; SafeCloud 2020</p>
+		<p className="LoginPage-Footer">&copy; SafeCloud 2020</p>
 	</div>
   );
 };

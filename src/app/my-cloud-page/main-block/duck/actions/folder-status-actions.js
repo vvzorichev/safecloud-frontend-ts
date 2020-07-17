@@ -7,7 +7,8 @@ const onOpenFolder = (id) => {
 
 const onCloseFolder = (id) => {
 	return {
-		type: 'CLOSE'
+		type: 'CLOSE',
+		payload: id
 	}
 };
 

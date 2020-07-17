@@ -1,4 +1,4 @@
-.log-btn {
+.LogBtn {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -11,11 +11,11 @@
 	text-decoration: none;
 }
 
-.log-btn:last-child {
+.LogBtn:last-child {
 	margin-right: 0;
 }
 
-.log-btn:hover {
+.LogBtn:hover {
 	color: #375a7f;
 	text-decoration: none;
 }

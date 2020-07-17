@@ -7,7 +7,7 @@ import { compose } from '../../../../common/utils';
 import { onOpenFolder } from '../../duck/actions';
 import { changeFileTag } from '../duck/actions';
 
-import Item from './item.jsx';
+import Item from './item';
 
 const mapDispatchToProps = (dispatch) => {
 	return bindActionCreators({
@@ -28,9 +28,9 @@ const ItemContainer = ({ file = {}, changeFileTag, onOpenFolder, history }) => {
 	if (file.type === 'folder') {
 		return (
 			<Item
-			file={file}
-			changeFileTag={changeFileTag}
-			onOpenFolder={handleFolderOpening} />
+				file={file}
+				changeFileTag={changeFileTag}
+				onOpenFolder={handleFolderOpening} />
 		)
 	}
 

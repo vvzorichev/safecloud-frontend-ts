@@ -23,6 +23,16 @@ const fetchFiles = (fileService) => () => (dispatch) => {
 	fileService.getFiles()
 		.then((data) => dispatch(filesLoaded(data)))
 		.catch((err) => dispatch(filesError(err)));
-}; 
+};
 
-export default fetchFiles;
+const changeFileTag= (id) => {
+	return {
+		type: 'CHANGE_FILE_TAG',
+		payload: id
+	};
+};
+
+export {
+	fetchFiles,
+	changeFileTag
+};

@@ -27,11 +27,11 @@ const SearchPanelContainer = ({ isLoggedIn, onSearch, history }) => {
 		onSearch(event.target.value);
 	};
 
-	if (isLoggedIn) {
-		return <SearchPanel onChange={handleChange}/>;
+	if (!isLoggedIn) {
+		return null;
 	}
 	
-	return null;
+	return <SearchPanel onChange={handleChange}/>;
 };
 
 export default compose(

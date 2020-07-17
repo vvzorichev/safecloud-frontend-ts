@@ -1,4 +1,4 @@
-.header-head {
+.Header {
 	display: flex;
 	height: 60px;
 	padding: 0 1.5%;
@@ -6,13 +6,13 @@
 	justify-content: space-between;
 }
 
-.header-link {
+.Header-Link {
 	color: white;
 	text-decoration: none;
 	font-size: 2rem;
 }
 
-.header-link:hover {
+.Header-Link:hover {
 	color: #375a7f;
     text-decoration: none;
 }

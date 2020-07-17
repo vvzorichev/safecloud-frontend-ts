@@ -3,13 +3,10 @@ import { Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 import LoginPage from './login-page';
-import ILogStatus from "../../interfaces/i-log-status";
 
-interface INewLogStatus {
-	logStatus: ILogStatus
-}
+import { ILogStatusState } from "../../duck/interfaces/i-log-status";
 
-const mapStateToProps =  ({ logStatus: { isLoggedIn } }: INewLogStatus) => {
+const mapStateToProps =  ({ logStatus: { isLoggedIn } }: ILogStatusState) => {
 	return { isLoggedIn	};
 };
 
@@ -25,7 +22,7 @@ const LoginPageContainer: React.FC<IStateProps> = ({ isLoggedIn }) => {
 		return <Redirect to="/mycloud/drive" />;
 	}
 
-  return <LoginPage />;
+	return <LoginPage />;
 };
 
 export default connect(mapStateToProps)(LoginPageContainer);

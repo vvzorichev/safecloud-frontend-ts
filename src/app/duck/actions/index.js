@@ -1,5 +1,3 @@
-import fetchMemory from './memory-actions';
-
 import {
 	onLogin,
 	onLogout,
@@ -8,7 +6,6 @@ import {
 
 
 export {
-	fetchMemory,
 	onLogin,
 	onLogout,
 	onRegistration

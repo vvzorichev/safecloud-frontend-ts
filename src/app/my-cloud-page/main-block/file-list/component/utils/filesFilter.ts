@@ -2,7 +2,7 @@ import isNameEqual from './isNameEqual';
 
 const filesFilter = (
 	file: any,
-	searchField: string,
+	searchField: string | null,
 	section: string | null): boolean => {
 
 	const isFileNameEqual = isNameEqual(file.name, searchField);

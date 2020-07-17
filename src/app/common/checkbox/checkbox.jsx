@@ -4,7 +4,7 @@ const Checkbox = ({
 	value = null,
 	id = "checkbox",
 	isTagged = false,
-	changeFileTag }) => {
+	changeFileTag = null }) => {
 	
 	const [ tag, setTag ] = useState(isTagged);
 

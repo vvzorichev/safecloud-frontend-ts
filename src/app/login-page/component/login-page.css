@@ -1,4 +1,4 @@
-.login-page {
+.LoginPage {
 	height: 100%;
 	width: 100%;
 	display: flex;
@@ -7,13 +7,13 @@
 	margin: 5% auto;
 }
 
-.lp-header {
+.LoginPage-Header {
 	margin-bottom: .5%;
 	font-size: 33px;
 	font-weight: 400;
 }
 
-.lp-p {
+.LoginPage-Footer {
 	margin-top: 2.5%;
 	color: #999;
 }

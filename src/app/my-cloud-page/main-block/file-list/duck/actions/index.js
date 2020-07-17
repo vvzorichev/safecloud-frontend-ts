@@ -1,5 +1,4 @@
-import fetchFiles from './file-list-actions';
-import changeFileTag from './file-tag-actions';
+import { fetchFiles, changeFileTag } from './file-list-actions';
 
 export {
 	fetchFiles,

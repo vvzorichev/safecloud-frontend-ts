@@ -5,7 +5,7 @@ export default class MemoryService {
 		return new Promise((resolve, reject) => {
 			setTimeout(() => {
 				resolve(this.memory);
-				//reject('memory error')
+				//reject('memory error');
 			}, 1000)
 		});
 	}

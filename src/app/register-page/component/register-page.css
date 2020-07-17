@@ -1,4 +1,4 @@
-.register-page {
+.RegisterPage {
 	height: 100%;
 	width: 100%;
 	display: flex;
@@ -7,13 +7,13 @@
 	margin: 5% auto;
 }
 
-.rp-header {
+.RegisterPage-Header {
 	margin-bottom: .5%;
 	font-size: 33px;
 	font-weight: 400;
 }
 
-.rp-p {
+.RegisterPage-Footer {
 	margin-top: 2.5%;
 	color: #999;
 }
