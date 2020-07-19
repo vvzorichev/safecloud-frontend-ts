@@ -2,17 +2,25 @@ import React from 'react';
 
 import Checkbox from '../../../../common/checkbox';
 
-import './item.css';
+import './file-item.css';
 
-const Item = ({ file, changeFileTag, onOpenFolder = null }) => {
+import {IFileItemState} from "./interfaces/i-file-item";
+
+interface IProps extends IFileItemState {
+	changeFileTag: () => void;
+	onOpenFolder?: () => void;
+};
+
+const FileItem: React.FC<IProps> = ({ file, changeFileTag, onOpenFolder }) => {
+
 	const { id, name, size, type, dateAdded, isTagged } = file;
 
 	return (
 		<tr>
 			<td>
-				<Checkbox 
-					id={id} 
-					isTagged={isTagged} 
+				<Checkbox
+					id={id}
+					isTagged={isTagged}
 					changeFileTag={changeFileTag} />
 			</td>
 			<td className="file-name" onClick={onOpenFolder}>
@@ -25,4 +33,4 @@ const Item = ({ file, changeFileTag, onOpenFolder = null }) => {
 	);
 };
 
-export default Item;
+export default FileItem;

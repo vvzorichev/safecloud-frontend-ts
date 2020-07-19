@@ -2,12 +2,12 @@ import fileListReducer from '../../my-cloud-page/main-block/file-list/duck/reduc
 import memoryReducer from '../../my-cloud-page/sidebar/memory/duck/reducers'
 import searchFieldReducer from '../../header/search-panel/duck/reducers';
 import logStatusReducer from './log-status-reducer';
-import updateUploadStatus from '../../my-cloud-page/main-block/toolbar/upload-menu/reducers';
+import uploadStatusReducer from '../../my-cloud-page/main-block/toolbar/upload-menu/duck/reducers';
 import folderStatusReducer from '../../my-cloud-page/main-block/duck/reducers';
 
 const updateState = (state, action) => {
 	return {
-		uploadStatus : updateUploadStatus(state, action),
+		uploadStatus : uploadStatusReducer(state, action),
 		fileList: fileListReducer(state, action),
 		memory: memoryReducer(state, action),
 		searchField: searchFieldReducer(state, action),

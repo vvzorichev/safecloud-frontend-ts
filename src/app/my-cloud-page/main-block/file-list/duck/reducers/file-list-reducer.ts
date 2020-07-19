@@ -1,11 +1,14 @@
-const updateFile = (file) => {
+import { IFileItem } from "../../file-item/interfaces/i-file-item";
+import {IFileList} from "../interfaces/i-file-list";
+
+const updateFile = (file: IFileItem): IFileItem => {
 	return {
 		...file,
 		isTagged: !file.isTagged
 	};
 };
 
-const changeTag = (fileList, fileId) => {
+const changeTag = (fileList: IFileItem[], fileId: IFileItem["id"]): IFileItem[] => {
 	const fileIndex = fileList.findIndex(({ id }) => id === fileId);
 	const newFile = updateFile(fileList[fileIndex]);
 
@@ -16,7 +19,7 @@ const changeTag = (fileList, fileId) => {
 	];
 };
 
-const fileListReducer = (state, action) => {
+const fileListReducer = (state: any, action: any): IFileList => {
 
 	if (state === undefined) {
 		return {

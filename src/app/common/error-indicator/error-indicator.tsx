@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ErrorIndicator = () => {
+const ErrorIndicator: React.FC = () => {
 	return (
 		<div className="alert d-flex flex-column">
 			<h1 className="align-self-center">

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Spinner = () => {
+const Spinner: React.FC = () => {
 	return (
 		<div className="d-flex justify-content-center">
 			<div className="spinner-grow" role="status" />

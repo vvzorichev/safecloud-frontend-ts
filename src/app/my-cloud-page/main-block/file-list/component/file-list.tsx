@@ -2,7 +2,7 @@ import React from 'react';
 
 import { filesFilter } from './utils';
 
-import FileListItem from '../item';
+import FileListItem from '../file-item';
 
 import { IFileListContainer } from "./interfaces/i-file-list-container";
 

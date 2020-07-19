@@ -3,7 +3,7 @@ import React from 'react';
 import UploadBtn from '../upload-btn';
 import UploadFileForm from '../upload-file-forms';
 
-const UploadMenu = () => {
+const UploadMenu: React.FC = () => {
 	return (
 		<div className="btn-toolbar form-toolbar mb-2 mb-md-0">
 			<div className="btn-group mr-2">

@@ -1,4 +1,4 @@
-const updateUploadStatus = (state, action) => {
+const uploadStatusReducer = (state, action) => {
 	
 	if (state === undefined) {
 		return {
@@ -23,4 +23,4 @@ const updateUploadStatus = (state, action) => {
 	}
 };
 
-export default updateUploadStatus;
+export default uploadStatusReducer;

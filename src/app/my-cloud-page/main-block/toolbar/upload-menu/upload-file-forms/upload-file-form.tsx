@@ -1,6 +1,13 @@
 import React from 'react';
 
-const UploadFileForm = ({ onUploadFinish }) => {
+import { IProps } from "./upload-file-form-container";
+
+const UploadFileForm: React.FC<IProps> = ({ isUpload, onUploadFinish }) => {
+
+	if (!isUpload) {
+		return null;
+	}
+
 	return (
 		<form>
 			<input type="file"/>
