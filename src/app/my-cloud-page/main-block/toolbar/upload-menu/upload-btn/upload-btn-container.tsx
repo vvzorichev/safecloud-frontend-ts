@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 import { onUploadStart } from '../duck/actions';
 
-import UploadBtn from './upload-btn.js';
+import UploadBtn from './upload-btn';
 
 import { IUploadStatusState } from "../duck/interfaces/i-upload-status";
 
