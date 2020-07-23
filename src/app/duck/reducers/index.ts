@@ -5,7 +5,9 @@ import logStatusReducer from './log-status-reducer';
 import uploadStatusReducer from '../../my-cloud-page/main-block/toolbar/upload-menu/duck/reducers';
 import folderStatusReducer from '../../my-cloud-page/main-block/duck/reducers';
 
-const updateState = (state, action) => {
+import { IStore } from "../interfaces/i-store";
+
+const updateState = (state: IStore | undefined, action: any) => {
 	return {
 		uploadStatus : uploadStatusReducer(state, action),
 		fileList: fileListReducer(state, action),
@@ -15,8 +17,8 @@ const updateState = (state, action) => {
 	};
 };
 
-const reducer = (state, action) => {
-	const logStatus = logStatusReducer(state, action);
+const reducer = (state: any, action: any): any => {
+	const logStatus = logStatusReducer(state?.logStatus, action);
 
 	const otherStates = 
 		logStatus.isLoggedIn ?

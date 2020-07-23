@@ -8,7 +8,7 @@ import UploadFileForm from './upload-file-form';
 import { IUploadStatusState } from "../duck/interfaces/i-upload-status";
 
 const mapStateToProps =  ({ uploadStatus: { isUpload } }: IUploadStatusState) => {
-	return { isUpload	};
+	return { isUpload };
 };
 
 const mapDispatchToProps = (dispatch: Dispatch) => {

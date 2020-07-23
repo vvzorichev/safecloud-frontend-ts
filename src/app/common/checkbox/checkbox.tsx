@@ -1,10 +1,12 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 
-const Checkbox = ({ 
+import { ICheckbox } from "./interfaces/i-checkbox";
+
+const Checkbox: React.FC<ICheckbox> = ({
 	value = null,
 	id = "checkbox",
 	isTagged = false,
-	changeFileTag = null }) => {
+	changeFileTag = () => {} }) => {
 	
 	const [ tag, setTag ] = useState(isTagged);
 

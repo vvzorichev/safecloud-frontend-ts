@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 
 import store from './store';
 
-import ErrorBoundary from './app/common/error-boudary';
+import ErrorBoundary from './app/common/error-boundary';
 
 import { 
 	FileServiceProvider, 

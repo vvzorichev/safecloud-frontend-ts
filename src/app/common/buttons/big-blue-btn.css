@@ -1,0 +1,19 @@
+.BigBlueBtn {
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    border: 1px solid transparent;
+    border-radius: 0.3rem;
+    color: #fff;
+    background-color: #375a7f;
+    width: 100%;
+}
+
+.BigBlueBtn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(85, 115, 146, 0.5);
+}
+
+.BigBlueBtn:active {
+    background-color: #28415b;
+    border-color: #243a53;
+}

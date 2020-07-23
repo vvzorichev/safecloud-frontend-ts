@@ -1,13 +1,11 @@
 import { ILogStatus } from "../interfaces/i-log-status";
 
-const logStatusReducer = (state: any, action: any): ILogStatus => {
-	
-	if (state === undefined) {
-		return {
-			isLoggedIn: false,
-			isRegistered: false
-		};
-	}
+const initialState: ILogStatus = {
+	isLoggedIn: false,
+	isRegistered: false
+};
+
+const logStatusReducer = (state = initialState, action: any): ILogStatus => {
 
 	switch (action.type) {
 
@@ -28,8 +26,9 @@ const logStatusReducer = (state: any, action: any): ILogStatus => {
 				isLoggedIn: false,
 				isRegistered: true
 			};
+
 		default:
-			return state.logStatus;
+			return state;
 	}
 };
 

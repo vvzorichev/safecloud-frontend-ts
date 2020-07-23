@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+
 import ErrorIndicator from '../error-indicator';
 
-export default class ErrorBoundary extends Component {
+import {IErrorBoundary} from "./interfaces/i-error-boundary";
 
-	state = {
-		hasError: false
-	};
+export default class ErrorBoundary extends Component<any, IErrorBoundary> {
+
+	state = { hasError: false };
 	
 	componentDidCatch() {
 		this.setState({ hasError: true });

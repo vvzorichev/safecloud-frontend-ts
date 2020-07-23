@@ -7,7 +7,7 @@ import './file-item.css';
 import {IFileItemState} from "./interfaces/i-file-item";
 
 interface IProps extends IFileItemState {
-	changeFileTag: () => void;
+	changeFileTag: () => {};
 	onOpenFolder?: () => void;
 };
 

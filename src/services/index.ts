@@ -4,4 +4,4 @@ import MemoryService from './memory-service';
 export {
 	FileService,
 	MemoryService
-}
+};

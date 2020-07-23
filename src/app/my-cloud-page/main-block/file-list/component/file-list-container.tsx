@@ -13,7 +13,7 @@ import ErrorIndicator from '../../../../common/error-indicator';
 import FileList from './file-list'
 
 import { IFileListState } from "../duck/interfaces/i-file-list";
-import {ISearchFieldState} from "../../../../header/search-panel/duck/interfaces/i-search-field";
+import { ISearchFieldState } from "../../../../header/search-panel/duck/interfaces/i-search-field";
 
 const mapStateToProps = ({
 	fileList: { files, loading, error },

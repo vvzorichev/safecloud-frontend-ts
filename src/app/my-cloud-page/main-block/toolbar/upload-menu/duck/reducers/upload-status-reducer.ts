@@ -1,4 +1,6 @@
-const uploadStatusReducer = (state, action) => {
+import { IUploadStatus } from "../interfaces/i-upload-status";
+
+const uploadStatusReducer = (state: any, action: any): IUploadStatus => {
 	
 	if (state === undefined) {
 		return {
