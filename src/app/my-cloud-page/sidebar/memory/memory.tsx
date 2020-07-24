@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Memory: React.FC<{memory: string | null}> = ({ memory }) => {
+const Memory: React.FC<{memory: string | null | undefined}> = ({ memory }) => {
 	return (
 		<div className="d-flex flex-column">
 			<h5 className="sidebar-heading px-3 mt-4 mb-1 text-muted">

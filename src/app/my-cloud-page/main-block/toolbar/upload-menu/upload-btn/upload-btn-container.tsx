@@ -1,11 +1,11 @@
 import { bindActionCreators, Dispatch } from 'redux';
 import { connect } from 'react-redux';
 
-import { onUploadStart } from '../duck/actions';
+import { onUploadStart } from '../duck/upload-status-actions';
 
 import UploadBtn from './upload-btn';
 
-import { IUploadStatusState } from "../duck/interfaces/i-upload-status";
+import { IUploadStatusState } from "../duck/i-upload-status";
 
 const mapStateToProps =  ({ uploadStatus: { isUpload } }: IUploadStatusState) => {
 	return { isUpload };

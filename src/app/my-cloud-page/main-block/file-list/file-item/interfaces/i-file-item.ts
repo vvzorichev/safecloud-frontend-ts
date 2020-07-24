@@ -1,5 +1,5 @@
 export interface IFileItem {
-    id: string | undefined,
+    id: string,
     name: string,
     size: string,
     type: string,

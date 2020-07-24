@@ -1,6 +1,7 @@
-import { ISearchField } from "../../../../../header/search-panel/duck/interfaces/i-search-field";
+import { ISearchField } from "../../../../../header/search-panel/duck/i-search-field";
+import { IFileItem } from "../../file-item/interfaces/i-file-item";
 
 export interface IFileListContainer extends ISearchField {
-    files: any[],
+    files: IFileItem[],
     section: string,
 }

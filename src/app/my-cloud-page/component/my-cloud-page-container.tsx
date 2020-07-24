@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { Redirect } from "react-router-dom";
 import { connect } from 'react-redux';
 
-import { ILogStatusState } from "../../duck/interfaces/i-log-status";
+import { ILogStatusState } from "../../duck/i-log-status";
 
 import MyCloudPage from './my-cloud-page';
 

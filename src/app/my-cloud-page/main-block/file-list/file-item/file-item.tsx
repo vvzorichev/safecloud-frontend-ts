@@ -4,10 +4,11 @@ import Checkbox from '../../../../common/checkbox';
 
 import './file-item.css';
 
-import {IFileItemState} from "./interfaces/i-file-item";
+import { IFileItem, IFileItemState } from "./interfaces/i-file-item";
+import { IAction } from "../duck/i-file-list";
 
 interface IProps extends IFileItemState {
-	changeFileTag: () => {};
+	changeFileTag: (id: IFileItem['id']) => IAction;
 	onOpenFolder?: () => void;
 };
 

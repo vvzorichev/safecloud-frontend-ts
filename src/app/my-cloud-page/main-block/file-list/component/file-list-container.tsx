@@ -5,15 +5,15 @@ import { connect } from 'react-redux';
 
 import { withFileService } from '../../../../common/hoc-helpers';
 import { compose } from '../../../../common/utils';
-import { fetchFiles } from '../duck/actions';
+import { fetchFiles } from '../duck/file-list-actions';
 
 import Spinner from '../../../../common/spinner';
 import ErrorIndicator from '../../../../common/error-indicator';
 
 import FileList from './file-list'
 
-import { IFileListState } from "../duck/interfaces/i-file-list";
-import { ISearchFieldState } from "../../../../header/search-panel/duck/interfaces/i-search-field";
+import { IFileListState } from "../duck/i-file-list";
+import { ISearchFieldState } from "../../../../header/search-panel/duck/i-search-field";
 
 const mapStateToProps = ({
 	fileList: { files, loading, error },

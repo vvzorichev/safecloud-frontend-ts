@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 
 import LoginPage from './login-page';
 
-import { ILogStatusState } from "../../duck/interfaces/i-log-status";
+import { ILogStatusState } from "../../duck/i-log-status";
 
 const mapStateToProps =  ({ logStatus: { isLoggedIn } }: ILogStatusState) => {
 	return { isLoggedIn	};

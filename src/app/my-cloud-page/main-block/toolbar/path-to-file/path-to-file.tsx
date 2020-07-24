@@ -7,7 +7,7 @@ const PathToFile: React.FC<IState> = ({ path }) => {
 		<div>
 			<span className="h4">Cloud Drive  &rsaquo; </span>
 			{
-				path.map((pathElement: number) => {
+				path.map((pathElement: string) => {
 					return <span className="h4">{pathElement} &rsaquo; </span>;
 				})
 			}

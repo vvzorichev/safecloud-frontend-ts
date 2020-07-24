@@ -1,19 +1,17 @@
-import fileListReducer from '../../my-cloud-page/main-block/file-list/duck/reducers/file-list-reducer';
-import memoryReducer from '../../my-cloud-page/sidebar/memory/duck/reducers'
-import searchFieldReducer from '../../header/search-panel/duck/reducers';
+import fileListReducer from '../../my-cloud-page/main-block/file-list/duck/file-list-reducer';
+import memoryReducer from '../../my-cloud-page/sidebar/memory/duck/memory-reducer'
+import searchFieldReducer from '../../header/search-panel/duck/search-field-reducer';
 import logStatusReducer from './log-status-reducer';
-import uploadStatusReducer from '../../my-cloud-page/main-block/toolbar/upload-menu/duck/reducers';
-import folderStatusReducer from '../../my-cloud-page/main-block/duck/reducers';
+import uploadStatusReducer from '../../my-cloud-page/main-block/toolbar/upload-menu/duck/upload-status-reducer';
+import folderStatusReducer from '../../my-cloud-page/main-block/duck/folder-status-reducer';
 
-import { IStore } from "../interfaces/i-store";
-
-const updateState = (state: IStore | undefined, action: any) => {
+const updateState = (state: any, action: any) => {
 	return {
-		uploadStatus : uploadStatusReducer(state, action),
-		fileList: fileListReducer(state, action),
-		memory: memoryReducer(state, action),
-		searchField: searchFieldReducer(state, action),
-		folderStatus: folderStatusReducer(state, action)
+		uploadStatus : uploadStatusReducer(state?.uploadStatus, action),
+		fileList: fileListReducer(state?.fileList, action),
+		memory: memoryReducer(state?.memory, action),
+		searchField: searchFieldReducer(state?.searchField, action),
+		folderStatus: folderStatusReducer(state?.folderStatus, action)
 	};
 };
 

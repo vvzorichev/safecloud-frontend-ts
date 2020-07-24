@@ -4,8 +4,8 @@ import {bindActionCreators, Dispatch} from 'redux';
 import { connect } from 'react-redux';
 import { compose } from '../../../../common/utils';
 
-import { onOpenFolder } from '../../duck/actions';
-import { changeFileTag } from '../duck/actions';
+import { onOpenFolder } from '../../duck/folder-status-actions';
+import { changeFileTag } from '../duck/file-list-actions';
 
 import FileItem from './file-item';
 

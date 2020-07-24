@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { ChangeEvent } from 'react';
 
 import './search-panel.css';
 
-const SearchPanel = ({ onChange }) => {
+const SearchPanel: React.FC<any> = ({ onChange }) => {
 	return (
 		<div className="search-panel">
 			<input 

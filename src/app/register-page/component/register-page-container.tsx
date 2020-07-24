@@ -3,7 +3,7 @@ import { Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 import RegisterPage from './register-page';
-import {ILogStatusState} from "../../duck/interfaces/i-log-status";
+import {ILogStatusState} from "../../duck/i-log-status";
 
 const mapStateToProps =  ({ logStatus: { isLoggedIn } }: ILogStatusState) => {
 	return { isLoggedIn	};

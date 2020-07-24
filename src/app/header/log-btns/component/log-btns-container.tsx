@@ -1,11 +1,11 @@
 import {bindActionCreators, Dispatch} from 'redux';
 import { connect } from 'react-redux';
 
-import { onLogout, onRegistration } from '../../../duck/actions';
+import { onLogout, onRegistration } from '../../../duck/log-status-actions';
 
 import LogBtns from './log-btns';
 
-import { ILogStatusState } from "../../../duck/interfaces/i-log-status";
+import { ILogStatusState } from "../../../duck/i-log-status";
 
 const mapStateToProps =  ({ logStatus: { isLoggedIn, isRegistered } }: ILogStatusState) => {
 	return { isLoggedIn, isRegistered };

@@ -1,27 +1,27 @@
-import { ILogStatus } from "../interfaces/i-log-status";
+import { IAction, ILogStatus, Types } from "../i-log-status";
 
 const initialState: ILogStatus = {
 	isLoggedIn: false,
 	isRegistered: false
 };
 
-const logStatusReducer = (state = initialState, action: any): ILogStatus => {
+const logStatusReducer = (state = initialState, action: IAction): ILogStatus => {
 
 	switch (action.type) {
 
-		case 'LOGIN':
+		case Types.LOGIN:
 			return {
 				isLoggedIn: true,
 				isRegistered: false
 			};
 
-		case 'LOGOUT':
+		case Types.LOGOUT:
 			return {
 				isLoggedIn: false,
 				isRegistered: false
 			};
 
-		case 'REGISTRATION':
+		case Types.REGISTRATION:
 			return {
 				isLoggedIn: false,
 				isRegistered: true

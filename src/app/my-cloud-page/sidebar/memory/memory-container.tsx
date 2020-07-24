@@ -4,14 +4,14 @@ import { connect } from 'react-redux';
 
 import { withMemoryService } from '../../../common/hoc-helpers';
 import { compose } from '../../../common/utils';
-import { fetchMemory } from './duck/actions';
+import fetchMemory from './duck/memory-actions';
 
 import Spinner from '../../../common/spinner';
 import ErrorIndicator from '../../../common/error-indicator';
 
 import Memory from './memory';
 
-import { IMemoryState } from "./duck/interfaces/i-memory";
+import { IMemoryState } from "./duck/i-memory";
 
 const mapStateToProps = ({ memory: { memory, loading, error } }: IMemoryState) => {
 	return { memory, loading, error };
